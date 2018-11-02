@@ -1,0 +1,11 @@
+#sidenav-menu, nav div p, #sidenav{
+	display: none;
+}
+
+#topnav{
+	padding: 0;
+	list-style: none;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
