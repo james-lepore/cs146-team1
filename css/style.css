@@ -1,12 +1,7 @@
-body {
+nav {
   margin: 0;
+  width:100%;
   font-family: Verdana;
-}
-
-body div{
-  height:100px;
-  text-align: center;
-  font-size: 40px;
 }
 
 .topnav {
@@ -56,7 +51,9 @@ body div{
     transform: rotate(-45deg) translate(-5px, 3px);
 }
 
-.change .bar2 {opacity: 0;}
+.change .bar2 {
+  opacity: 0;
+}
 
 .change .bar3 {
     -webkit-transform: rotate(45deg) translate(-6px, -4px);
