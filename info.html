@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Mars Information</title>
+	<link rel="stylesheet" type="text/css" href="info-style.css">
+  </head>
+  <body>
+  
+  <header>
+	<!-- Insert header here !-->
+  </header>
+  
+  
+	<!-- Accordion !-->
+	<button class="accordion">Videos</button>
+	<div class="panel">
+		<iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/_50N5QoQoc4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		
+		<iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/lNq9Zobyk2A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	</div>
+	
+	<button class="accordion">Recreational Activities</button>
+	<div class="panel">
+		<p>...</p>
+	</div>
+	
+	<button class="accordion">Laws & Government</button>
+	<div class="panel">
+		<p>...</p>
+	</div>
+
+	<button class="accordion">Terraforming Process</button>
+	<div class="panel">
+		<p>...</p>
+	</div>
+	
+	<button class="accordion">Food and Resources</button>
+	<div class="panel">
+		<p>...</p>
+	</div>
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "flex") {
+            panel.style.display = "none";
+        } else {
+            panel.style.display = "flex";
+        }
+    });
+}
+</script>
+  <footer>
+	<!-- Insert footer here !-->
+  </footer>
+  </body>
+</html>
