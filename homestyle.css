@@ -1,0 +1,134 @@
+/*Michael Reilly*/
+/*I pledge my honor that I have abided by the Stevens Honor System*/
+
+@media only screen and (min-width: 999px){
+header{
+	background-color: red;
+	display: flex;
+	align-item: center;
+	justify-content: center;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+h1{
+	margin: 0px 0px 0px 0px;
+	color: white;
+}
+body{
+	background-color: maroon;
+}
+.list{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.posting{
+	width: 800px;
+	display: flex;
+	flex-grow: inherit;
+}
+.post{
+	margin: 10px 10px 10px 10px;
+	padding: 10px 10px 10px 10px;
+	background-color: white;
+	display: flex;
+	align-items: center;
+}
+.pic{
+	height: 200px;
+	width: 200px;
+	margin-right: 10px;
+}
+.write{
+	height: 200px;
+}
+}
+@media only screen and (min-width: 400px) and (max-width: 998px){
+header{
+	background-color: red;
+	display: flex;
+	align-item: center;
+	justify-content: center;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+h1{
+	margin: 0px 0px 0px 0px;
+	color: white;
+}
+body{
+	background-color: maroon;
+}
+.list{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+}
+.posting{
+	display: flex;
+	flex-grow: inherit;
+	flex-basis: 50%;
+}
+.post{
+	margin: 10px 10px 10px 10px;
+	padding: 10px 10px 10px 10px;
+	background-color: white;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+.pic{
+	height: auto;
+	width: 100%;
+	margin-right: 10px;
+}
+.write{
+	height: 200px;
+}
+}
+@media only screen and (max-width: 399px){
+header{
+	background-color: red;
+	display: flex;
+	align-item: center;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	flex-direction: column;
+	text-align: center;
+}
+h1{
+	margin: 0px 0px 0px 0px;
+	color: white;
+}
+body{
+	background-color: maroon;
+}
+.list{
+	display: flex;
+	flex-wrap: wrap;
+	flex-basis: auto;
+	flex-direction: column;
+}
+.posting{
+	display: flex;
+	flex-grow: inherit;
+}
+.post{
+	margin: 10px 10px 10px 10px;
+	padding: 10px 10px 10px 10px;
+	background-color: white;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+.pic{
+	height: auto;
+	width: 100%;
+	margin-right: 10px;
+}
+.write{
+	height: 200px;
+}
+}
