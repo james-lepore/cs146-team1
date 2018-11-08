@@ -1,0 +1,39 @@
+body{
+background-image:url("https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/IjFi-wx/videoblocks-simulated-illustration-of-fast-moving-stars-in-night-sky-looping-for-around-76-seconds_sbnoy66ox_thumbnail-full11.png");
+}
+
+div{
+border-radius: 25px;
+background: #eee;
+padding: 10px; 
+margin-top: 10px;
+margin-bottom: 10px;
+margin-left: 50px;
+margin-right: 50px;
+display:flex;
+flex-direction:column;
+
+}
+
+
+input[type=text]:focus{
+border: 3px solid #555;
+}
+
+legend{
+display:flex;
+font-weight:bold;
+font-size: 24px;
+}
+
+@media only screen and (min-width: 999px){
+
+}
+@media only screen and (max-width: 998px) and (min-width: 800px){
+
+}
+@media only screen and (max-width: 799px){
+input, label {
+display:block;
+}
+}

@@ -1,39 +1,49 @@
+<!-- Do not edit or turn in this file! You will only be editing the style.css file!-->
 <!DOCTYPE html>
 <html>
-	<head>
-		<title></title>
 
-		<link rel='stylesheet' href='css/reset.css'/>
-		<link rel='stylesheet' href='css/style.css'/>
-		<link rel='stylesheet' href='css/desktop.css' media='screen and (min-width:769px)'/>
-		<link rel='stylesheet' href='css/mobile.css' media='screen and (max-width:768px)'/>
+<head>
+  <title>Mars</title>
+  <link rel="stylesheet" type="text/css" href="https://tidepod.fun/hw2_assets/hw2_helper.css">
+  <meta http-Equiv="Content-Type" content="text/html;charset=UTF-8">
+  <meta http-Equiv="Cache-Control" Content="no-cache" />
+  <meta http-Equiv="Pragma" Content="no-cache" />
+  <meta http-Equiv="Expires" Content="0" />
+</head>
 
-		<script src='js/mainjs.js'></script>
-	</head>
-	<body>
-		<nav>
-			<div>
-				<img id='sidenav-menu' alt='menu' src='http://cdn.onlinewebfonts.com/svg/img_53100.png'/ onclick="toggle()">
-				<img id='logo' alt='logo' src='https://arizonachristian.edu/wp-content/uploads/2017/06/logo-placeholder.png'/>
-		    	<ul id='topnav'>
-		        	<li class='navitem'>Home</li>
-		        	<li class='navitem'>Info</li>
-		        	<li class='navitem'>Real Estate</li>
-		        	<li class='navitem'>FAQ</li>
-		        	<li class='navitem'>Apply</li>
-		        	<li class='navitem'>Contact Us</li>
-		      	</ul>
-		      	<p></p>
-		    </div>
-		    <ul id='sidenav'>
-		    	<a href='#' class='sidenavitem'><li>Home</li></a>
-		        <a href='#' class='sidenavitem'><li>Info</li></a>
-		        <a href='#' class='sidenavitem'><li>Real Estate</li></a>
-		        <a href='#' class='sidenavitem'><li>FAQ</li></a>
-		        <a href='#' class='sidenavitem'><li>Apply</li></a>
-		        <a href='#' class='sidenavitem'><li>Contact</li></a>
-		    </ul>
-		</nav>
+<body>
+  <header>
+    <h1>Mars</h1>
+    <h2>Responsive CSS</h2>
+  </header>
+  <div class="container">
+    <div class="content">
+      <div class="page" id="phone">
+        <div class="page-label"></div>
+        <iframe name="phone" src="./assignment/application.html"></iframe>
+      </div>
+      <div class="page" id="tablet">
+        <div class="page-label"></div>
+        <iframe name="tablet" src="./assignment/application.html"></iframe>
+      </div>
+      <div class="page" id="desktop">
+        <div class="page-label"></div>
+        <iframe name="desktop" src="./assignment/application.html"></iframe>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div>
+      In this assignment you are writing CSS in <code>solution.css</code> to modify the style of the <code>page.html</code>
+      file. <b>Do not change any html.</b>
+      This file shows three different views of that <b>same html file</b> with different
+      widths. This should serve as an example for how you would
+      design cross-platform websites for phone, tablet, and desktop.
+    </div>
+  </footer>
+  <script>
+    [...document.getElementsByClassName('page')].forEach(e => e.children[0].innerText = `${e.id} | ${Math.floor(e.getBoundingClientRect().width)}px`)
+  </script>
+</body>
 
-	</body>
 </html>
