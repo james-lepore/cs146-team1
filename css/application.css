@@ -8,13 +8,16 @@ body{
 	padding: 10px; 
 	margin-top: 10px;
 	margin-bottom: 10px;
-	margin-left: 50px;
-	margin-right: 50px;
+	margin-left: auto;
+	margin-right: auto;
 	display:flex;
 	flex-direction:column;
-
+	width: 50%;
 }
-
+#passengers{
+	display:flex;
+	justify-content: flex-end;
+}
 
 input[type=text]:focus{
 	border: 3px solid #555;
@@ -24,8 +27,17 @@ legend {
 	display:flex;
 	font-weight:bold;
 	font-size: 24px;
+	text-align: center;
 }
 
+.info {
+	text-align: center;
+}
+
+.app {
+	height: 1%;
+	width: 4%;
+}
 @media only screen and (min-width: 999px){
 
 }
