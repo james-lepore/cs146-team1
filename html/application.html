@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel='stylesheet' href='../css/reset.css'/>
+  <link rel="stylesheet" type="text/css" href="../css/application.css">
+  <link rel="stylesheet" type="text/css" href = "../css/style.css">
+  <link rel="stylesheet" type="text/css" href = "../css/desktop.css" media="screen and (min-width:769px)">
+  <link rel="stylesheet" type="text/css" href = "../css/tablet.css" media="screen and (min-width:481px) and (max-width:768px)">
+  <link rel="stylesheet" type="text/css" href = "../css/mobile.css" media="screen and (max-width:480px)">
+
+		<script src='../js/mainjs.js'></script>
+		<script src='../js/application.js'></script>
+</head>
+<body>
+
+  <nav class="topnav" id="myTopnav">
+    <a href="../index.html">LOGO/Link to home</a>
+    <div>
+      <a href="info.html">Information</a>
+      <a href="househtml.html">Housing</a>
+      <a href="#">About Us</a>
+      <a href="FAQ.html">FAQ</a>
+      <a id='active'>Apply Now</a>
+      <a class="icon" onclick="topNav()">
+        <div id="container">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+      </a>
+    </div>
+  </nav>
+
+  <div class = "form">
+   <form method="post" action="process.php">  
+    <legend>Your Information</legend>
+    <p>
+     <label>First Name: </label>       
+     <input type="text" name="firstName"/>    
+     <label>Last Name: </label>       
+     <input type="text" name="lastName"/>
+   </p>    
+
+   <p>
+     <label>Gender: </label>
+     <select name = "gender"/>
+     <option>-</option>
+     <option>Male</option>
+     <option>Female</option>
+     <option>Prefer not to say</option>
+   </select>
+ </p>
+
+ <p>
+   <label>Birthday: </label>       
+   <input type="date" name="birthdate"/>     
+ </p>  
+
+
+ <p>
+   <label>Current Occupation: </label>       
+   <input type="text" name="job"/>     
+ </p>  
+ 
+ <p>
+   <label>Current State of Health: </label>       
+   <select name="health"/>
+   <option>-</option>
+   <option>Great!</option>
+   <option>Good</option>
+   <option>Fair</option>
+   <option>Alright, I guess</option>
+   <option>Terrible</option>
+   <option>Dead</option>
+ </select>
+</p>  
+
+</div>
+
+<div class = "form">
+  <legend>Contact Information</legend>
+</p>
+<p>
+  <label>Address Line 1: </label>
+  <input type = "text" name = "ad1"/>
+</p>
+<p>
+  <label>Address Line 2: </label>
+  <input type = "text" name = "ad2"/>
+</p>
+<p>
+  <label>City: </label>
+  <input type = "text" name = "city"/>
+</p>
+<p>
+  <label>Zip Code: </label>
+  <input type = "text" pattern = "[0-9][0-9][0-9][0-9][0-9]" name = "zip"/>
+</p>
+<p>
+  <label>State: </label>
+  <input type = "text" name = "state"/>
+</p>
+<p>
+  <label>Home Phone Number: </label>
+  <input type = "tel" name = "homePhone"/>
+</p>
+<p>
+ <label>Cell Phone Number: </label>
+ <input type = "tel" name = "cellPhone"/>
+ <label>Do we have permission to text you? </label>
+ <select name="textPermission"/>
+ <option>Yes</option>
+ <option>No</option>
+</select>     
+<p>
+ <label>Email: </label>
+ <input type = "email" name = "email"/>
+</p>
+
+</div>
+<div class = "form">
+ <legend>Passengers</legend>
+ <p>
+  <label>How many people are you bringing with you? </label>
+  <input type = "text" id = "people" name = "nPassengers"/>
+</p>
+</div>
+<div class = "form">
+  <legend>Other Questions</legend>
+  <p>
+    <label>Do you believe in aliens? </label>
+    <select name="alienBelief">
+      <option>-</option>
+      <option>Yes</option>
+      <option>No</option>
+      <option>Maybe</option>
+    </select>     
+  </p>
+  <input type = "submit"/>  
+</form>
+</div>
+
+</body>
+</html>
