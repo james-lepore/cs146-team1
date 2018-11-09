@@ -7,9 +7,12 @@
   <link rel="stylesheet" type="text/css" href = "../css/desktop.css" media="screen and (min-width:769px)">
   <link rel="stylesheet" type="text/css" href = "../css/tablet.css" media="screen and (min-width:481px) and (max-width:768px)">
   <link rel="stylesheet" type="text/css" href = "../css/mobile.css" media="screen and (max-width:480px)">
+
+		<script src='../js/mainjs.js'></script>
+		<script src='../js/faq.js'></script>
 </head>
 <body>
-  <!--
+
   <nav class="topnav" id="myTopnav">
     <a href="../index.html">LOGO/Link to home</a>
     <div>
@@ -27,9 +30,8 @@
       </a>
     </div>
   </nav>
-  -->
 
-  <div>
+  <div class = "form">
    <form method="post" action="process.php">  
     <legend>Your Information</legend>
     <p>
@@ -75,7 +77,7 @@
 
 </div>
 
-<div>
+<div class = "form">
   <legend>Contact Information</legend>
 </p>
 <p>
@@ -116,13 +118,22 @@
 </p>
 
 </div>
-<div>
+<div class = "form">
  <legend>Passengers</legend>
  <p>
-  <label>How many people are you bringing with you?</label>
+  <label>How many people are you bringing with you? </label>
   <input type = "text" name = "nPassengers"/>
 </p>
-<div>
+<p>
+  <label>How many children under 18? </label>
+  <input type = "text" name = "nChildren"/>
+</p>
+<p>
+  <label>How many pets? </label>
+  <input type = "text" name = "nPets"/>
+</p>
+</div>
+<div class = "form">
   <legend>Other Questions</legend>
   <p>
     <label>Do you believe in aliens? </label>
@@ -133,7 +144,7 @@
       <option>Maybe</option>
     </select>     
   </p>
-  <button type="submit" name="submit">Submit</button>  
+  <input type = "submit"/>  
 </form>
 </div>
 

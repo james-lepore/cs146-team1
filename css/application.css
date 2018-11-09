@@ -2,7 +2,7 @@ body{
 	background-image:url("https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/IjFi-wx/videoblocks-simulated-illustration-of-fast-moving-stars-in-night-sky-looping-for-around-76-seconds_sbnoy66ox_thumbnail-full11.png");
 }
 
-div{
+.form{
 	border-radius: 25px;
 	background: #eee;
 	padding: 10px; 
