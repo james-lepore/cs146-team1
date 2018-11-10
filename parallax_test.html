@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			body, html {
+   				height: 100%;
+   				background-color: black;
+			}
+			
+			p{
+				position: absolute;
+				top:45%;
+				left:48%;
+				text-align: center;
+				color:white;
+				font-size: 50px;
+			}
+
+			.parallax {
+			    height: 100%; 
+			    width: 100%;
+			    background-attachment: fixed;
+			    background-position: center;
+			    background-repeat: no-repeat;
+			    background-size: cover;
+			    display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+
+			#earth{
+				background-image: url('http://www.nasa.gov/centers/goddard/images/content/638831main_globe_east_2048.jpg');
+				background-size:95%;
+			}
+
+			#earth2{
+				background-image: url('http://www.nasa.gov/centers/goddard/images/content/638831main_globe_east_2048.jpg');
+				background-size:95%;
+			}
+
+			#mars{
+				background-image: url('https://upload.wikimedia.org/wikipedia/commons/0/02/OSIRIS_Mars_true_color.jpg');
+				background-size:100%;
+			}
+			
+			.box{
+				position: absolute;
+				height:200px;
+				width:200px;
+				background-color: red;
+				color:white;
+				font-size: 20px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+
+			.between{
+				height:30%;
+				background-color:white;
+				text-align: center;
+				font-size: 30px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class='parallax' id='earth'></div>
+		<div class='parallax' id = 'mars'>
+			<div class='box'>Hey its mars</div>
+		</div>
+		<div class='between'>This is in betwwen the parallax sctions</div>
+		<div class='parallax' id='earth2'></div>
+	</body>
+</html>
