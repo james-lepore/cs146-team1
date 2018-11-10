@@ -1,5 +1,5 @@
 body{
-	background-image:url("https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/IjFi-wx/videoblocks-simulated-illustration-of-fast-moving-stars-in-night-sky-looping-for-around-76-seconds_sbnoy66ox_thumbnail-full11.png");
+	background-image:url("https://i.gifer.com/origin/df/dfc3382d4a85242727fd23906597dd64_w200.gif");
 }
 
 .form{
@@ -16,19 +16,27 @@ body{
 	font-family: Verdana;
 }
 .labels{
-    display: inline-block;
-    float: left;
-    clear: left;
-    width: 250px;
-    text-align: right;
+    	display: inline-block;
+    	float: left;
+    	clear: left;
+    	width: 250px;
+    	text-align: right;
+	margin-top:.5em;
+	margin-bottom:.5em;
 }
 .inputs {
-  display: inline-block;
-  float: left;
+  	display: inline-block;
+  	float: left;
+	margin-top:.5em;
+	margin-bottom:.5em;
+
 }
 
 #submit{
-clear: left;
+	display:flex;
+	justify-content:flex-end;
+	width: 50%;
+	height: 50%;
 }
 #passengers{
 	display:flex;
