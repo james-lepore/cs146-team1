@@ -35,17 +35,17 @@
    <form method="post" action="process.php">  
     <legend>Your Information</legend>
     <p>
-     <label>First Name: </label>       
-     <input type="text" name="firstName"/>  
+     <label class = "labels">First Name: </label>       
+     <input class = "inputs" type="text" name="firstName"/>  
 </p>
 <p>  
-     <label>Last Name: </label>       
-     <input type="text" name="lastName"/>
+     <label class = "labels">Last Name: </label>       
+     <input  class = "inputs" type="text" name="lastName"/>
    </p>    
 
    <p>
-     <label>Gender: </label>
-     <select name = "gender"/>
+     <label class = "labels">Gender: </label>
+     <select  class = "inputs" name = "gender"/>
      <option>-</option>
      <option>Male</option>
      <option>Female</option>
@@ -54,19 +54,19 @@
  </p>
 
  <p>
-   <label>Birthday: </label>       
-   <input type="date" name="birthdate"/>     
+   <label class = "labels">Birthday: </label>       
+   <input  class = "inputs" type="date" name="birthdate"/>     
  </p>  
 
 
  <p>
-   <label>Current Occupation: </label>       
-   <input type="text" name="job"/>     
+   <label class = "labels">Current Occupation: </label>       
+   <input  class = "inputs" type="text" name="job"/>     
  </p>  
  
  <p>
-   <label>Current State of Health: </label>       
-   <select name="health"/>
+   <label class = "labels">Current State of Health: </label>       
+   <select  class = "inputs" name="health"/>
    <option>-</option>
    <option>Great!</option>
    <option>Good</option>
@@ -83,42 +83,43 @@
   <legend>Contact Information</legend>
 </p>
 <p>
-  <label>Address Line 1: </label>
-  <input type = "text" name = "ad1"/>
+  <label class = "labels">Address Line 1: </label>
+  <input class = "inputs"  type = "text" name = "ad1"/>
 </p>
 <p>
-  <label>Address Line 2: </label>
-  <input type = "text" name = "ad2"/>
+  <label class = "labels">Address Line 2: </label>
+  <input class = "inputs"  type = "text" name = "ad2"/>
 </p>
 <p>
-  <label>City: </label>
-  <input type = "text" name = "city"/>
+  <label class = "labels">City: </label>
+  <input  class = "inputs" type = "text" name = "city"/>
 </p>
 <p>
-  <label>Zip Code: </label>
-  <input type = "text" pattern = "[0-9][0-9][0-9][0-9][0-9]" name = "zip"/>
+  <label class = "labels">Zip Code: </label>
+  <input  class = "inputs" type = "text" pattern = "[0-9][0-9][0-9][0-9][0-9]" name = "zip"/>
 </p>
 <p>
-  <label>State: </label>
-  <input type = "text" name = "state"/>
+  <label class = "labels">State: </label>
+  <input  class = "inputs" type = "text" name = "state"/>
 </p>
 <p>
-  <label>Home Phone Number: </label>
-  <input type = "tel" name = "homePhone"/>
+  <label class = "labels">Home Phone Number: </label>
+  <input  class = "inputs" type = "tel" name = "homePhone"/>
 </p>
 <p>
- <label>Cell Phone Number: </label>
- <input type = "tel" name = "cellPhone"/>
+ <label class = "labels">Cell Phone Number: </label>
+ <input  class = "inputs" type = "tel" name = "cellPhone"/>
 </p>
 <p>
- <label>Do we have permission to text you? </label>
- <select name="textPermission"/>
+ <label class = "labels">Do we have permission to text you? </label>
+ <select  class = "inputs" name="textPermission"/>
+<option>-</option>
  <option>Yes</option>
  <option>No</option>
 </select>     
 <p>
- <label>Email: </label>
- <input type = "email" name = "email"/>
+ <label class = "labels">Email: </label>
+ <input  class = "inputs" type = "email" name = "email"/>
 </p>
 
 </div>
@@ -136,14 +137,16 @@
 <div class = "form">
   <legend>Other Questions</legend>
   <p>
-    <label>Do you believe in aliens? </label>
-    <select name="alienBelief">
+    <label class = "labels">Do you believe in aliens? </label>
+    <select  class = "inputs" name="alienBelief">
       <option>-</option>
       <option>Yes</option>
       <option>No</option>
       <option>Maybe</option>
     </select>     
   </p>
+</div>
+<div id = "submit">
   <input type = "submit"/>  
 </form>
 
