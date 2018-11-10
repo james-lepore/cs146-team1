@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel='stylesheet' href='../css/reset.css'/>
-  <link rel="stylesheet" type="text/css" href="../css/application.css">
-  <link rel="stylesheet" type="text/css" href = "../css/style.css">
-  <link rel="stylesheet" type="text/css" href = "../css/desktop.css" media="screen and (min-width:769px)">
-  <link rel="stylesheet" type="text/css" href = "../css/tablet.css" media="screen and (min-width:481px) and (max-width:768px)">
-  <link rel="stylesheet" type="text/css" href = "../css/mobile.css" media="screen and (max-width:480px)">
-		<script src='../js/application.js'></script>
+  	<link rel='stylesheet' href='../css/reset.css'/>
+  	<link rel="stylesheet" type="text/css" href="../css/application.css">
+  	<link rel="stylesheet" type="text/css" href = "../css/style.css">
+  	<link rel="stylesheet" type="text/css" href = "../css/desktop.css" media="screen and (min-width:769px)">
+  	<link rel="stylesheet" type="text/css" href = "../css/tablet.css" media="screen and (min-width:481px) and (max-width:768px)">
+  	<link rel="stylesheet" type="text/css" href = "../css/mobile.css" media="screen and (max-width:480px)">
+	<script src='../js/application.js'></script>
 
-		<script src='../js/mainjs.js'></script>
+	<script src='../js/mainjs.js'></script>
 </head>
 <body>
 
@@ -125,8 +125,12 @@
 <div class = "form" id = "passengers">
  <legend>Passengers</legend>
  <p class = "info"> Please add the information for each additional passenger </p><p class = "info">that will be accompanying you on this journey</p>
-
-<button class = "app" id="add"/>
+ <div id='placeholderdiv'>
+ 	<p id='placeholder'></p>
+ </div>
+<button type='button' class="app" id="add" onclick = "addPerson()">
+	ADD
+</button>
 
 </div>
 <div class = "form">
@@ -142,6 +146,9 @@
   </p>
   <input type = "submit"/>  
 </form>
+
+
+
 </div>
 
 </body>
