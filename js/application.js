@@ -1,15 +1,16 @@
 function addPerson(){
-	console.log("clicked");
 	var l = document.createElement("p");
-	var txt = document.createTextNode("Name: ");
+	var txt = document.createTextNode("Full Name: ");
+	var i = document.createElement("input");
 	l.appendChild(txt);
 
 	var p = document.getElementById("placeholder");
 	var d = document.getElementById("placeholderdiv");
 	d.insertBefore(l,p);
+	d.insertBefore(i,l);
 }
 
-/*
-var b = document.getElementById("add");
-b.addEventListener("click", addPerson);
-*/
+function submit(){
+	console.log("clicked");
+	window.history.pushState("index.html");
+}
