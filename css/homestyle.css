@@ -44,8 +44,13 @@ body{
 .write{
 	height: 200px;
 }
-p {
+.price{
+	font-size: medium;
+	margin: .5em 0;
+}
+.description{
 	font-size: small;
+	font-weight: normal;
 }
 }
 @media only screen and (min-width: 400px) and (max-width: 998px){
@@ -90,7 +95,10 @@ body{
 .write{
 	height: 200px;
 }
-p {
+.price{
+	font-size: small;
+}
+.description{
 	font-size: x-small;
 }
 }
@@ -137,7 +145,10 @@ body{
 .write{
 	height: 200px;
 }
-p {
+.price{
+	font-size: small;
+}
+.description{
 	font-size: x-small;
 }
 }

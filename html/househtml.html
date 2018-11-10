@@ -2,21 +2,49 @@
 <html>
 	<title> Real Estate </title>
 	<head>
-		<link rel='stylesheet' href='../css/reset.css'/>
 		<link rel="stylesheet" href="../css/homestyle.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+
+	<link rel="stylesheet" type="text/css" href = "../css/reset.css">
+	<link rel="stylesheet" type="text/css" href = "../css/style.css">
+	<link rel="stylesheet" type="text/css" href = "../css/desktop.css" media="screen and (min-width:789px)">
+	<link rel="stylesheet" type="text/css" href = "../css/tablet.css" media="screen and (min-width:481px) and (max-width:788px)">
+	<link rel="stylesheet" type="text/css" href = "../css/mobile.css" media="screen and (max-width:480px)">
+
+	<script type="text/javascript" src="../js/mainjs.js"></script>
+
 	</head>
+	
+	<body>
+	<nav class="topnav" id="myTopnav">
+    <a href="#"> <img src="../images/logo.png"> </a>
+   	<div>
+	    <a href="info.html">Information</a>
+	    <a href="househtml.html" id="active">Housing</a>
+	    <a href="aboutUs.html">About Us</a>
+	    <a href="FAQ.html">FAQ</a>
+	    <a href="application.html">Apply Now</a>
+	    <a class="icon" onclick="topNav()">
+	      <div id="container">
+	        <div class="bar1"></div>
+	        <div class="bar2"></div>
+	        <div class="bar3"></div>
+	      </div>
+	    </a>
+	</div>
+  </nav>
 	<header>
 		<h1>Find Your Home On Mars!</h1>
 	</header>
-	<body>
 	<div class="list">
 	<div class="posting">
 	<div class="post">
 		<img class="pic" src="../images/Mars House 2.jpg" alt="exterior" title="exterior">
 		<img class="pic" src="../images/Mars House 3.jpg" alt="interior" title="interior">
 	<div class="write">
-		<h2> $2,000,000 <h2>
-		<p> These pod style houses are the most common type of houses located on the newly terraformed Mars. They are relatively small compared to other houses but are good for the budget-conscious space-travelers coming to Mars. </p>
+		<h2 class="price"> 2,000,000,000 SHC <h2>
+		<p class="description"> These pod style houses are the most common type of houses located on the newly terraformed Mars. They are relatively small compared to other houses but are good for any budget-conscious space-travelers coming to Mars due to their low price of 2,000,000,000 SHC. </p>
 	</div>
 	</div>
 	</div>
@@ -25,7 +53,8 @@
 		<img class="pic" src="../images/Mars House 5.jpg" alt="exterior" title="exterior">
 		<img class="pic" src="../images/Mars House 11.jpg" alt="interior" title="interior">
 	<div class="write">
-		<p> 2 </p>
+		<h2 class="price"> 144,012,000,121,211.99 SHC </h2>
+		<p class="description"> For the mere price of 144,012,121,211.99 SHC any person moving to Mars can buy a massive luxury mansion for themselves. This large home has more bedrooms and bathrooms than most people will ever need along with a pool the double size of the average Earth home. It is perfect for those willing to splurge in order to live a life of perfection. </p>
 	</div>
 	</div>
 	</div>
@@ -34,7 +63,8 @@
 		<img class="pic" src="../images/Mars House 6.jpg" alt="exterior" title="exterior">
 		<img class="pic" src="../images/Mars House 12.jpg" alt="interior" title="interior">
 	<div class="write">
-		<p> 3 </p>
+		<h2 class="price"> 79,999,999,999,999.99 SHC </h2>
+		<p class="description"> This beautiful home is perfect for any small families making a new life on Mars. It has a beautiful deck and garage as well as multiple bedrooms for the new  </p>
 	</div>
 	</div>
 	</div>
@@ -43,7 +73,8 @@
 		<img class="pic" src="../images/Mars House 7.jpg" alt="exterior" title="exterior">
 		<img class="pic" src="../images/Mars House 13.jpg" alt="interior" title="interior">
 	<div class="write">
-		<p> 4 </p>
+		<h2 class="price"> 420,000,000,000.99 SHC </h2>
+		<p class="description"> These apartments are for those living a single life and are don't wish to buy a house that is too large. It has minimal amenities and overall is a terrible place to live but it's considered cheap here on Mars so you're paying for what you're getting. </p>
 	</div>
 	</div>
 	</div>
@@ -52,7 +83,8 @@
 		<img class="pic" src="../images/Mars House 8.jpg" alt="exterior" title="exterior">
 		<img class="pic" src="../images/Mars House 14.jpg" alt="interior" title="interior">
 	<div class="write">
-		<p> 5 </p>
+		<h2 class="price"> 28! SHC </h2>
+		<p class="description"> This beautiful mansion is for those who want a classic feel to their home. This home, which is only 28! SHC, pays respect to architecture of the past but making it the same price as housing from the future, it's the best of both worlds. </p>
 	</div>
 	</div>
 	</div>
@@ -61,7 +93,8 @@
 		<img class="pic" src="../images/Mars House 9.jpg" alt="exterior" title="exterior">
 		<img class="pic" src="../images/Mars House 15.jpg" alt="interior" title="interior">
 	<div class="write">
-		<p> 6 </p>
+		<h2 class="price"> 4,999,999,999.99 SHC </h2>
+		<p class="description"> This nice family style home is great if you've got too many kids and not enough money. There is the a concrete backyard, known as the street, and enough rooms where if all the kids share it'll be fine and at least the parents will be nice and comfotable. This budget-safe home is for those who don't have enough money to buy anything else. </p>
 	</div>
 	</div>
 	</div>
@@ -70,10 +103,39 @@
 		<img class="pic" src="../images/Mars House 10.png" alt="exterior" title="exterior">
 		<img class="pic" src="../images/Mars House 16.png" alt="interior" title="interior">
 	<div class="write">
-		<p> 7 </p>
+		<h2 class="price"> Beyond Your Imagination </h2>
+		<p class="description"> Our wonderful, magnificent, intelligent, and most brilliant dictator, Iraklis Tsekourakis' majestic home on Mars is like this. Its exterior is beyond human reckoning and the interior will be a mystery to all humanity until the end of time and the home overall is more expensive than any house made. </p>
 	</div>
 	</div>
 	</div>
 	</div>
+<footer>
+  	<div id='footerSections'>
+	  	<section>
+	  		CONTACT
+	  		<br/><br/>
+	  		<p>1 Mars Ave.<br/>Marsville, Mars<br/>Email:<br/>&nbsp;mars@mars.mars&nbsp;<br/>Hologram Communicator:<br/>&nbsp;a12-48t-0s0</p> 
+	  	</section>
+	  	<section>
+	  		RESOURCES
+	  		<br/><br/>
+	  		<p>Herc's Class<br/>w3schools.com<br/>stackoverflow.com&nbsp;&nbsp;</p>
+	  	</section>
+	  	<section>
+	  		NEWSLETTER
+	  		<br/><br/>
+	  		<p>Subscribe to Mars Monthly&trade;
+	  		</p>
+	  		<input type='email' id='footerEmail' placeholder="Enter Email" /><div id='newsletterSubmit' onclick="footerSubmit()">Submit</div>
+	  	</section>
+	</div>
+	<div id='copyright'>
+		<br/>
+		Copyright &#169; 3027 Herc
+		<br/>
+		All Rights reserved. <a href='#'>Terms of Use</a> | <a href='#'>Privacy Policy</a>
+	</div>
+  </footer>
+
 	</body>
 </html>
