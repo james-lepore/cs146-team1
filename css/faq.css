@@ -1,12 +1,13 @@
 body{
     font-family: Verdana;
-    line-height: 1.7em;
-    font-size: 18px;
+    
 }
 
-section{
+.faq-section{
 	width:90%;
 	margin:auto;
+    line-height: 1.7em;
+    font-size: 18px;
 }
 
 article{
