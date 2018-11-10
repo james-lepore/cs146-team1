@@ -15,3 +15,20 @@ function showAnswer(num) {
     	y.style.borderBottom = "none";
     }
 }
+
+function convert(){
+    usd = document.getElementById('usd')
+    shc = document.getElementById('shc')
+
+    if (usd.value != ''){
+        shc.value = (usd.value / 1000000)
+    }
+    else if (shc.value != ''){
+        usd.value = (shc.value * 1000000)
+    }
+}
+
+function resetConverter(){
+    document.getElementById('usd').value = ''
+    document.getElementById('shc').value = ''
+}
