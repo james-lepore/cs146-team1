@@ -13,10 +13,17 @@ body{
 	display:flex;
 	flex-direction:column;
 	width: 50%;
+	font-family: Verdana;
+	clear:both;
 }
 #passengers{
 	display:flex;
 	justify-content: flex-end;
+}
+#add{
+background: url('https://b.kisscc0.com/20180817/pe/kisscc0-addition-plus-and-minus-signs-symbol-computer-ic-mono-vcs-add-5b7721db031083.5635613615345341070126.png');
+width: 50%;
+height: 50%;
 }
 
 input[type=text]:focus{
