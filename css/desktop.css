@@ -2,10 +2,21 @@
 	display: none;
 }
 
+nav div{
+	float:right;
+}
+
 #topnav{
 	padding: 0;
 	list-style: none;
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
+}
+
+footer #footerSections{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-top: 12px;
 }

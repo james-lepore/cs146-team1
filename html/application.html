@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<link rel='stylesheet' href='../css/reset.css'/>
+  	<link rel="stylesheet" type="text/css" href="../css/application.css">
+  	<link rel="stylesheet" type="text/css" href = "../css/style.css">
+  	<link rel="stylesheet" type="text/css" href = "../css/desktop.css" media="screen and (min-width:769px)">
+  	<link rel="stylesheet" type="text/css" href = "../css/tablet.css" media="screen and (min-width:481px) and (max-width:768px)">
+  	<link rel="stylesheet" type="text/css" href = "../css/mobile.css" media="screen and (max-width:480px)">
+	<script src='../js/application.js'></script>
+
+	<script src='../js/mainjs.js'></script>
+</head>
+<body>
+
+  <nav class="topnav" id="myTopnav">
+    <a href="../index.html">LOGO/Link to home</a>
+    <div>
+      <a href="info.html">Information</a>
+      <a href="househtml.html">Housing</a>
+      <a href="aboutUs.html">About Us</a>
+      <a href="FAQ.html">FAQ</a>
+      <a id='active'>Apply Now</a>
+      <a class="icon" onclick="topNav()">
+        <div id="container">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+      </a>
+    </div>
+  </nav>
+
+  <div class = "form">
+   <form method="post" action="process.php">  
+    <legend>Your Information</legend>
+    <p>
+     <label class = "labels">First Name: </label>       
+     <input class = "inputs" type="text"/>  
+</p>
+<p>  
+     <label class = "labels">Last Name: </label>       
+     <input  class = "inputs" type="text"/>
+   </p>    
+
+   <p>
+     <label class = "labels">Gender: </label>
+     <select  class = "inputs"/>
+     <option>-</option>
+     <option>Male</option>
+     <option>Female</option>
+     <option>Prefer not to say</option>
+   </select>
+ </p>
+
+ <p>
+   <label class = "labels">Birthday: </label>       
+   <input  class = "inputs" type="date"/>     
+ </p>  
+
+
+ <p>
+   <label class = "labels">Current Occupation: </label>       
+   <input  class = "inputs" type="text"/>     
+ </p>  
+ 
+ <p>
+   <label class = "labels">Current State of Health: </label>       
+   <select  class = "inputs"/>
+   <option>-</option>
+   <option>Great!</option>
+   <option>Good</option>
+   <option>Fair</option>
+   <option>Alright, I guess</option>
+   <option>Terrible</option>
+   <option>Dead</option>
+ </select>
+</p>  
+
+</div>
+
+<div class = "form">
+  <legend>Contact Information</legend>
+<p>
+  <label class = "labels">Address Line 1: </label>
+  <input class = "inputs"  type = "text"/>
+</p>
+<p>
+  <label class = "labels">Address Line 2: </label>
+  <input class = "inputs"  type = "text"/>
+</p>
+<p>
+  <label class = "labels">City: </label>
+  <input  class = "inputs" type = "text"/>
+</p>
+<p>
+  <label class = "labels">Zip Code: </label>
+  <input  class = "inputs" type = "text" pattern = "[0-9][0-9][0-9][0-9][0-9]" name = "zip"/>
+</p>
+<p>
+  <label class = "labels">State: </label>
+  <input  class = "inputs" type = "text"/>
+</p>
+<p>
+  <label class = "labels">Home Phone Number: </label>
+  <input  class = "inputs" type = "tel"/>
+</p>
+<p>
+ <label class = "labels">Cell Phone Number: </label>
+ <input  class = "inputs" type = "tel"/>
+</p>
+<p>
+ <label class = "labels">Do we have permission to text you? </label>
+ <select  class = "inputs"/>
+<option>-</option>
+ <option>Yes</option>
+ <option>No</option>
+</select>     
+<p>
+ <label class = "labels">Email: </label>
+ <input  class = "inputs" type = "email"/>
+</p>
+
+</div>
+<div class = "form">
+  <legend>Emergency Contact</legend>
+  <p>
+     <label class = "labels">First Name: </label>       
+     <input class = "inputs" type="text"/>  
+</p>
+<p>  
+     <label class = "labels">Last Name: </label>       
+     <input  class = "inputs" type="text"/>
+   </p>    
+ <p>
+   <label class = "labels">Birthday: </label>       
+   <input  class = "inputs" type="date"/>     
+ </p>  
+
+<p>
+  <label class = "labels">Address Line 1: </label>
+  <input class = "inputs"  type = "text"/>
+</p>
+<p>
+  <label class = "labels">Address Line 2: </label>
+  <input class = "inputs"  type = "text"/>
+</p>
+<p>
+  <label class = "labels">City: </label>
+  <input  class = "inputs" type = "text"/>
+</p>
+<p>
+  <label class = "labels">Zip Code: </label>
+  <input  class = "inputs" type = "text" pattern = "[0-9][0-9][0-9][0-9][0-9]"/>
+</p>
+<p>
+  <label class = "labels">State: </label>
+  <input  class = "inputs" type = "text"/>
+</p>
+<p>
+  <label class = "labels">Home Phone Number: </label>
+  <input  class = "inputs" type = "tel"/>
+</p>
+<p>
+ <label class = "labels">Cell Phone Number: </label>
+ <input  class = "inputs" type = "tel"/>
+</p>  
+<p>
+ <label class = "labels">Email: </label>
+ <input  class = "inputs" type = "email"/>
+</p>
+
+</div>
+<div class = "form" id = "passengers">
+ <legend>Passengers</legend>
+ <p class = "info"> Please add the information for each additional passenger </p><p class = "info">that will be accompanying you on this journey</p>
+ <div id='placeholderdiv'>
+ 	<p id='placeholder'></p>
+ </div>
+<button type='button' class="app" id = "plus" onclick = "addPerson()">
+	<img id = "add" src="http://pluspng.com/img-png/free-png-plus-sign-plus-symbol-clipart-library-600.png">
+</button>
+
+</div>
+<div class = "form">
+  <legend>Other Questions</legend>
+  <p>
+    <label class = "labels">Do you believe in aliens? </label>
+    <select  class = "inputs">
+      <option>-</option>
+      <option>Yes</option>
+      <option>No</option>
+      <option>Maybe</option>
+    </select>     
+  </p>
+<p id="submit">
+<a href="index.html">Submit</a>
+</p>
+
+</div>
+</form>
+
+</body>
+</html>

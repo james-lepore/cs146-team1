@@ -26,7 +26,7 @@
 	list-style: none;
 }
 
-.topnav div a {
+.topnav div a{
   display: none;
 }
 
@@ -54,13 +54,7 @@
 
 footer #footerSections{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-around;
-  text-align: center;
   padding-top: 12px;
-}
-
-footer div section p{
-  margin-top: -12px;
-  margin-bottom: 12px;
 }
