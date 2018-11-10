@@ -64,3 +64,40 @@ nav a img{
     -webkit-transform: rotate(45deg) translate(-6px, -4px);
     transform: rotate(45deg) translate(-5px, -4px);
 }
+
+
+footer{
+  width:100%;
+  background-color: black;
+  position: relative;
+  bottom:0px;
+  left:0px;
+  right: 0px;
+  color:white;
+  font-family: Verdana;
+  padding-bottom: 12px;
+}
+
+#copyright{
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  bottom: 0px;
+}
+
+footer div section p{
+  color:lightgray;
+  font-size: 14px;
+}
+
+#newsletterSubmit{
+  display: inline;
+  padding:5px;
+  background-color:green;
+  font-size:11px;
+  cursor: pointer;
+}
+
+footer a{
+  color:lightblue;
+}

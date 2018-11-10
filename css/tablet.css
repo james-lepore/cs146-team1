@@ -51,3 +51,10 @@
   display: block;
   text-align: left;
 }
+
+footer #footerSections{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-top: 12px;
+}
