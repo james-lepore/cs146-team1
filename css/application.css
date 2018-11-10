@@ -14,7 +14,21 @@ body{
 	flex-direction:column;
 	width: 50%;
 	font-family: Verdana;
-	clear:both;
+}
+.labels{
+    display: inline-block;
+    float: left;
+    clear: left;
+    width: 250px;
+    text-align: right;
+}
+.inputs {
+  display: inline-block;
+  float: left;
+}
+
+#submit{
+clear: left;
 }
 #passengers{
 	display:flex;
