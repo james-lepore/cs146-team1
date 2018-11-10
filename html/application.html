@@ -36,16 +36,16 @@
     <legend>Your Information</legend>
     <p>
      <label class = "labels">First Name: </label>       
-     <input class = "inputs" type="text" name="firstName"/>  
+     <input class = "inputs" type="text"/>  
 </p>
 <p>  
      <label class = "labels">Last Name: </label>       
-     <input  class = "inputs" type="text" name="lastName"/>
+     <input  class = "inputs" type="text"/>
    </p>    
 
    <p>
      <label class = "labels">Gender: </label>
-     <select  class = "inputs" name = "gender"/>
+     <select  class = "inputs"/>
      <option>-</option>
      <option>Male</option>
      <option>Female</option>
@@ -55,18 +55,18 @@
 
  <p>
    <label class = "labels">Birthday: </label>       
-   <input  class = "inputs" type="date" name="birthdate"/>     
+   <input  class = "inputs" type="date"/>     
  </p>  
 
 
  <p>
    <label class = "labels">Current Occupation: </label>       
-   <input  class = "inputs" type="text" name="job"/>     
+   <input  class = "inputs" type="text"/>     
  </p>  
  
  <p>
    <label class = "labels">Current State of Health: </label>       
-   <select  class = "inputs" name="health"/>
+   <select  class = "inputs"/>
    <option>-</option>
    <option>Great!</option>
    <option>Good</option>
@@ -81,18 +81,17 @@
 
 <div class = "form">
   <legend>Contact Information</legend>
-</p>
 <p>
   <label class = "labels">Address Line 1: </label>
-  <input class = "inputs"  type = "text" name = "ad1"/>
+  <input class = "inputs"  type = "text"/>
 </p>
 <p>
   <label class = "labels">Address Line 2: </label>
-  <input class = "inputs"  type = "text" name = "ad2"/>
+  <input class = "inputs"  type = "text"/>
 </p>
 <p>
   <label class = "labels">City: </label>
-  <input  class = "inputs" type = "text" name = "city"/>
+  <input  class = "inputs" type = "text"/>
 </p>
 <p>
   <label class = "labels">Zip Code: </label>
@@ -100,26 +99,75 @@
 </p>
 <p>
   <label class = "labels">State: </label>
-  <input  class = "inputs" type = "text" name = "state"/>
+  <input  class = "inputs" type = "text"/>
 </p>
 <p>
   <label class = "labels">Home Phone Number: </label>
-  <input  class = "inputs" type = "tel" name = "homePhone"/>
+  <input  class = "inputs" type = "tel"/>
 </p>
 <p>
  <label class = "labels">Cell Phone Number: </label>
- <input  class = "inputs" type = "tel" name = "cellPhone"/>
+ <input  class = "inputs" type = "tel"/>
 </p>
 <p>
  <label class = "labels">Do we have permission to text you? </label>
- <select  class = "inputs" name="textPermission"/>
+ <select  class = "inputs"/>
 <option>-</option>
  <option>Yes</option>
  <option>No</option>
 </select>     
 <p>
  <label class = "labels">Email: </label>
- <input  class = "inputs" type = "email" name = "email"/>
+ <input  class = "inputs" type = "email"/>
+</p>
+
+</div>
+<div class = "form">
+  <legend>Emergency Contact</legend>
+  <p>
+     <label class = "labels">First Name: </label>       
+     <input class = "inputs" type="text"/>  
+</p>
+<p>  
+     <label class = "labels">Last Name: </label>       
+     <input  class = "inputs" type="text"/>
+   </p>    
+ <p>
+   <label class = "labels">Birthday: </label>       
+   <input  class = "inputs" type="date"/>     
+ </p>  
+
+<p>
+  <label class = "labels">Address Line 1: </label>
+  <input class = "inputs"  type = "text"/>
+</p>
+<p>
+  <label class = "labels">Address Line 2: </label>
+  <input class = "inputs"  type = "text"/>
+</p>
+<p>
+  <label class = "labels">City: </label>
+  <input  class = "inputs" type = "text"/>
+</p>
+<p>
+  <label class = "labels">Zip Code: </label>
+  <input  class = "inputs" type = "text" pattern = "[0-9][0-9][0-9][0-9][0-9]"/>
+</p>
+<p>
+  <label class = "labels">State: </label>
+  <input  class = "inputs" type = "text"/>
+</p>
+<p>
+  <label class = "labels">Home Phone Number: </label>
+  <input  class = "inputs" type = "tel"/>
+</p>
+<p>
+ <label class = "labels">Cell Phone Number: </label>
+ <input  class = "inputs" type = "tel"/>
+</p>  
+<p>
+ <label class = "labels">Email: </label>
+ <input  class = "inputs" type = "email"/>
 </p>
 
 </div>
@@ -138,7 +186,7 @@
   <legend>Other Questions</legend>
   <p>
     <label class = "labels">Do you believe in aliens? </label>
-    <select  class = "inputs" name="alienBelief">
+    <select  class = "inputs">
       <option>-</option>
       <option>Yes</option>
       <option>No</option>
@@ -146,11 +194,37 @@
     </select>     
   </p>
 <p id="submit">
-<a href="info.html">Submit</a>
+<a href="index.html">Submit</a>
 </p>
 
 </div>
 </form>
-
+		<footer>
+		  	<div id='footerSections'>
+			  	<section>
+			  		CONTACT
+			  		<br/><br/>
+			  		<p>1 Mars Ave.<br/>Marsville, Mars<br/>Email:<br/>&nbsp;mars@mars.mars&nbsp;<br/>Hologram Communicator:<br/>&nbsp;a12-48t-0s0</p> 
+			  	</section>
+			  	<section>
+			  		RESOURCES
+			  		<br/><br/>
+			  		<p>Herc's Class<br/>w3schools.com<br/>stackoverflow.com&nbsp;&nbsp;</p>
+			  	</section>
+			  	<section>
+			  		NEWSLETTER
+			  		<br/><br/>
+			  		<p>Subscribe to Mars Monthly&trade;
+			  		</p>
+			  		<input type='email' id='footerEmail' placeholder="Enter Email" /><div id='newsletterSubmit' onclick="footerSubmit()">Submit</div>
+			  	</section>
+			</div>
+			<div id='copyright'>
+				<br/>
+				Copyright &#169; 3027 Herc
+				<br/>
+				All Rights reserved. <a href='#'>Terms of Use</a> | <a href='#'>Privacy Policy</a>
+			</div>
+		</footer>
 </body>
 </html>

@@ -1,12 +1,15 @@
-nav {
+.topnav {
   margin: 0;
   width:100%;
   font-family: Verdana;
 }
+img.logo {
+	content:url("../images/logo.png");
+}
 
-nav a img{
+.topnav a img{
   height: 100%;
-  max-height: 60px;
+  max-height: 40px;
 }
 
 .topnav {
