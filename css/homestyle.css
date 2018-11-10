@@ -44,6 +44,9 @@ body{
 .write{
 	height: 200px;
 }
+p {
+	font-size: small;
+}
 }
 @media only screen and (min-width: 400px) and (max-width: 998px){
 header{
@@ -86,6 +89,9 @@ body{
 }
 .write{
 	height: 200px;
+}
+p {
+	font-size: x-small;
 }
 }
 @media only screen and (max-width: 399px){
@@ -130,5 +136,8 @@ body{
 }
 .write{
 	height: 200px;
+}
+p {
+	font-size: x-small;
 }
 }
