@@ -14,12 +14,8 @@ body{
 	width: 50%;
 	font-family: Verdana;
 }
-
 #submit{
-	display:flex;
-	justify-content:flex-end;
-	width: 50%;
-	height: 50%;
+	text-align:center;
 }
 #passengers{
 	display:flex;

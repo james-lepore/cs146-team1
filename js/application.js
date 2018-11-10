@@ -9,8 +9,3 @@ function addPerson(){
 	d.insertBefore(l,p);
 	d.insertBefore(i,l);
 }
-
-function submit(){
-	console.log("clicked");
-	window.history.pushState("index.html");
-}
