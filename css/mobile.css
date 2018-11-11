@@ -126,11 +126,14 @@ footer div section p{
 }
 
 /*Application*/
-.input, .labels {
+.inputs, .labels {
   display:block;
+display:flex;
+  justify-content:center;
+  margin:auto;
 }
 legend{
-  font-size: 14px;
+  font-size: 20px;
 }
 .form{
   font-size:.6em;
