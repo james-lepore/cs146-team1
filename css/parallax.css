@@ -1,4 +1,3 @@
-
   body, html {
       height: 100%;
       background-color: black;
@@ -18,12 +17,12 @@
 
   [img=earth]{
     background-image: url('http://www.nasa.gov/centers/goddard/images/content/638831main_globe_east_2048.jpg');
-    background-size:95%;
+    background-size:100%;
   }
 
   [img=mars]{
     background-image: url('https://upload.wikimedia.org/wikipedia/commons/0/02/OSIRIS_Mars_true_color.jpg');
-    background-size:100%;
+    background-size:105%;
   }
 
   [img=rocket]{
