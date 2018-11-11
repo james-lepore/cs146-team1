@@ -98,3 +98,14 @@ footer div section p{
 .description{
   font-size: x-small;
 }
+
+/*Application*/
+.input, .labels {
+  display:block;
+}
+legend{
+  font-size: 14px;
+}
+.form{
+  font-size:.6em;
+{
