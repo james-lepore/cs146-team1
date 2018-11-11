@@ -8,6 +8,7 @@
   	<link rel="stylesheet" type="text/css" href = "../css/tablet.css" media="screen and (min-width:481px) and (max-width:768px)">
   	<link rel="stylesheet" type="text/css" href = "../css/mobile.css" media="screen and (max-width:480px)">
 	<script src='../js/mainjs.js'></script>
+	<script src='../js/aboutUs.js'></script>
 </head>
 
 	<body>
@@ -75,7 +76,7 @@ I'm practically perfect in every way
 	</div>
 		<legend class = "subtitles">Contact Us</legend>
 		<div class = "about">
-		<form action="/action_page.php">
+		<form>
 			<p>
 				<input class = "contact" type="text" placeholder = "Your Name"/>
 			</p>
@@ -86,7 +87,7 @@ I'm practically perfect in every way
 			<textarea class = "contact" rows=7 placeholder = "Enter your message here."></textarea>
 				
 			</p>
- <input type="submit" value="Submit">
+ <button type = 'button' onclick="submitEmail()">Send</button>
 </form>
 	</div>
 	
