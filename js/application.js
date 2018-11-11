@@ -39,3 +39,8 @@ function addPerson(){
 	d.insertBefore(i,k);
 	d.insertBefore(l,i);
 }
+
+function submitApp(){
+	alert("Application Successfully Submitted! Redirecting to the homepage.")
+	window.location='../index.html'
+}

@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
+ <title>Application</title>
+
  <link rel='stylesheet' href='../css/reset.css'/>
  <link rel="stylesheet" type="text/css" href="../css/application.css">
  <link rel="stylesheet" type="text/css" href = "../css/style.css">
  <link rel="stylesheet" type="text/css" href = "../css/desktop.css" media="screen and (min-width:769px)">
  <link rel="stylesheet" type="text/css" href = "../css/tablet.css" media="screen and (min-width:481px) and (max-width:768px)">
  <link rel="stylesheet" type="text/css" href = "../css/mobile.css" media="screen and (max-width:480px)">
- <script src='../js/application.js'></script>
 
+ <script src='../js/application.js'></script>
  <script src='../js/mainjs.js'></script>
 </head>
 <body>
@@ -195,12 +197,22 @@
       <option>Maybe</option>
     </select>     
   </p>
+  <br/>
   <p id="submit">
-    <a href="../index.html">Submit</a>
+    <button type='button' onclick="submitApp()">Submit</button>
   </p>
 
 </div>
 </form>
+
+<div id="myModal" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>Some text in the Modal..</p>
+  </div>
+</div>
+
 <footer>
  <div id='footerSections'>
   <section>

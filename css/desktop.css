@@ -20,3 +20,41 @@ footer #footerSections{
   justify-content: space-around;
   padding-top: 12px;
 }
+
+
+/*Housing*/
+.list{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.posting{
+	width: 800px;
+	display: flex;
+	flex-grow: inherit;
+}
+.post{
+	margin: 10px 10px 10px 10px;
+	padding: 10px 10px 10px 10px;
+	background-color: white;
+	display: flex;
+	align-items: center;
+}
+.pic{
+	height: 200px;
+	width: 200px;
+	margin-right: 10px;
+}
+.write{
+	height: 200px;
+}
+.price{
+	font-size: medium;
+	margin: .5em 0;
+}
+.description{
+	font-size: small;
+	font-weight: normal;
+}
