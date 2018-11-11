@@ -71,6 +71,7 @@ footer #footerSections{
 .homeh1{
 	margin: 0px 0px 0px 0px;
 	color: white;
+	font-family: verdana;
 }
 .homebody{
 	background-color: maroon;
@@ -96,7 +97,7 @@ footer #footerSections{
 .pic{
 	height: auto;
 	width: 100%;
-	margin-right: 0px;
+	margin-right: 10px;
 }
 .write{
 	height: 200px;

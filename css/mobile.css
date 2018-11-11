@@ -37,7 +37,7 @@
 
 
 .topnav.responsive {
-	position: relative;
+  position: relative;
 }
 
 .topnav.responsive .icon {
@@ -78,6 +78,7 @@ footer div section p{
 .homeh1{
 	margin: 0px 0px 0px 0px;
 	color: white;
+	font-family: verdana;
 }
 .homebody{
 	background-color: maroon;
