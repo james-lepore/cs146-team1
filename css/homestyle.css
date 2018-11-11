@@ -2,7 +2,7 @@
 /*I pledge my honor that I have abided by the Stevens Honor System*/
 
 @media only screen and (min-width: 999px){
-header{
+.homeheader{
 	background-color: red;
 	display: flex;
 	align-item: center;
@@ -10,11 +10,11 @@ header{
 	padding-top: 20px;
 	padding-bottom: 20px;
 }
-h1{
+.homeh1{
 	margin: 0px 0px 0px 0px;
 	color: white;
 }
-body{
+.homebody{
 	background-color: maroon;
 }
 .list{
