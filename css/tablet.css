@@ -66,7 +66,6 @@ footer #footerSections{
 
 /*Housing*/
 .homeheader{
-	background-color: red;
 	display: flex;
 	align-item: center;
 	justify-content: center;
@@ -78,8 +77,8 @@ footer #footerSections{
 	color: white;
 	font-family: verdana;
 }
-.homebody{
-	background-color: maroon;
+body{
+	background-image: linear-gradient(rgb(0,0,170), black);
 }
 .list{
 	display: flex;
@@ -94,7 +93,7 @@ footer #footerSections{
 .post{
 	margin: 10px 10px 10px 10px;
 	padding: 10px 10px 10px 10px;
-	background-color: white;
+	background-color: #EEE;
 	display: flex;
 	align-items: center;
 	flex-direction: column;
