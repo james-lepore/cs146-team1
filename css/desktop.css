@@ -46,7 +46,7 @@ footer #footerSections{
 	justify-content: center;
 }
 .posting{
-	width: 900px;
+	width: 90%;
 	display: flex;
 	flex-grow: inherit;
 }
@@ -63,7 +63,7 @@ footer #footerSections{
 	margin-right: 10px;
 }
 .write{
-	height: 200px;
+	height: 350px;
 }
 .price{
 	font-size: large;
