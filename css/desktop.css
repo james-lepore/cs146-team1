@@ -46,7 +46,7 @@ footer #footerSections{
 	justify-content: center;
 }
 .posting{
-	width: 800px;
+	width: 900px;
 	display: flex;
 	flex-grow: inherit;
 }
