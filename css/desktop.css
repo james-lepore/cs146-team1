@@ -59,8 +59,10 @@ footer #footerSections{
 	align-items: center;
 }
 .pic{
-	height: 200px;
-	width: 200px;
+	min-height: 200px;
+	min-width: 200px;
+	max-width: 200px;
+	max-height: 200px;
 	margin-right: 10px;
 }
 .write{
