@@ -1,0 +1,54 @@
+
+  body, html {
+      height: 100%;
+      background-color: black;
+  }
+
+  .parallax {
+      height: 100%;
+      width: 100%;
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  [img=earth]{
+    background-image: url('http://www.nasa.gov/centers/goddard/images/content/638831main_globe_east_2048.jpg');
+    background-size:95%;
+  }
+
+  [img=mars]{
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/0/02/OSIRIS_Mars_true_color.jpg');
+    background-size:100%;
+  }
+
+[color=blue]{
+  background-color: blue;
+}
+
+[color=red]{
+  background-color: red;
+}
+
+  .box{
+    position: absolute;
+    height:200px;
+    width:200px;
+    color:white;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Verdana;
+  }
+
+  .between{
+    height:30%;
+    background-color:white;
+    text-align: center;
+    font-size: 30px;
+  }

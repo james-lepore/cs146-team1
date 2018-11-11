@@ -3,6 +3,7 @@
   width:100%;
   font-family: Verdana;
   border-bottom: 1px solid white;
+  position: absolute;
 }
 
 img.logo {
@@ -58,7 +59,7 @@ img.logo {
     width: 20px;
     height: 3px;
     background-color: white;
-    margin: 3px 0px; 
+    margin: 3px 0px;
     transition: 0.4s;
 }
 

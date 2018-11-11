@@ -46,7 +46,7 @@ footer #footerSections{
 	justify-content: center;
 }
 .posting{
-	width: 1200px;
+	width: 800px;
 	display: flex;
 	flex-grow: inherit;
 }
@@ -68,10 +68,12 @@ footer #footerSections{
 .price{
 	font-size: large;
 	margin: .5em 0;
+	font-family: verdana;
 }
 .description{
 	font-size: medium;
 	font-weight: normal;
+	font-family: verdana;
 }
 
 /*Application*/
