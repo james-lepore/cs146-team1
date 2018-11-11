@@ -60,37 +60,56 @@ footer #footerSections{
 }
 
 /*Housing*/
+.homeheader{
+	background-color: red;
+	display: flex;
+	align-item: center;
+	justify-content: center;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.homeh1{
+	margin: 0px 0px 0px 0px;
+	color: white;
+}
+.homebody{
+	background-color: maroon;
+}
 .list{
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
 }
 .posting{
-  display: flex;
-  flex-grow: inherit;
-  flex-basis: 50%;
+	display: flex;
+	flex-grow: inherit;
+	flex-basis: 50%;
 }
 .post{
-  margin: 10px 10px 10px 10px;
-  padding: 10px 10px 10px 10px;
-  background-color: white;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
+	margin: 10px 10px 10px 10px;
+	padding: 10px 10px 10px 10px;
+	background-color: white;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
 }
 .pic{
-  height: auto;
-  width: 100%;
-  margin-right: 10px;
+	height: auto;
+	width: 100%;
+	margin-right: 10px;
 }
 .write{
-  height: 200px;
+	height: 200px;
 }
 .price{
-  font-size: small;
+	font-size: x-large;
+	margin: .5em 0;
+	font-family: verdana;
 }
 .description{
-  font-size: x-small;
+	font-size: large;
+	font-weight: normal;
+	font-family: verdana;
 }
 
 /*Application*/
