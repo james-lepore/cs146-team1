@@ -1,69 +1,71 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Come to Mars!</title>
+	<head>
+		<link rel="stylesheet" type="text/css" href="css/parallax.css">
+		<link rel="stylesheet" type="text/css" href="css/reset.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+  	<link rel="stylesheet" type="text/css" href="css/desktop.css" media="screen and (min-width:769px)">
+  	<link rel="stylesheet" type="text/css" href="css/tablet.css"  media="screen and (min-width:481px) and (max-width:768px)">
+  	<link rel="stylesheet" type="text/css" href="css/mobile.css"  media="screen and (max-width:480px)">
+		<link rel='icon' href='images/favicon.png'>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Come to Mars!</title>
+		<script type="text/javascript" src="js/mainjs.js"></script>
+	</head>
+	<body>
+		<nav class="topnav" id="myTopnav">
+		<a href="index.html"><img src="images/SpaceY.png"/></a>
+			<div>
+				  <a href="html/info.html">Information</a>
+					<a href="html/househtml.html">Housing</a>
+					<a href="html/aboutUs.html">About Us</a>
+					<a href="html/FAQ.html">FAQ</a>
+					<a href='html/application.html'>Apply Now</a>
+					<a class="icon" onclick="topNav()">
+					<div id="container">
+							<div class="bar1"></div>
+							<div class="bar2"></div>
+							<div class="bar3"></div>
+					</div>
+					</a>
+			</div>
+		</nav>
 
-	<link rel="stylesheet" type="text/css" href = "css/reset.css">
-	<link rel="stylesheet" type="text/css" href = "css/style.css">
-	<link rel="stylesheet" type="text/css" href = "css/desktop.css" media="screen and (min-width:789px)">
-	<link rel="stylesheet" type="text/css" href = "css/tablet.css" media="screen and (min-width:481px) and (max-width:788px)">
-	<link rel="stylesheet" type="text/css" href = "css/mobile.css" media="screen and (max-width:480px)">
+		<div class='parallax' img='earth'>
+		  <div class='box' color="blue">Earth is boring</div>
+		</div>
+		<div class='parallax' img='mars'>
+			<div class='box' color='red'>Mars is cool</div>
+		</div>
+		<div class='between'>Will you come with us there?</div>
+		<div class='parallax' img='earth'></div>
 
-	<link rel='icon' href='images/favicon.png'>
-
-	<script type="text/javascript" src="js/mainjs.js"></script>
-</head>
-<body>
-  <nav class="topnav" id="myTopnav">
-    <a href=""><img src="images/SpaceY.png"/></a>
-   	<div>
-	    <a href="html/info.html">Information</a>
-	    <a href="html/househtml.html">Housing</a>
-	    <a href="html/Aboutus.html">About Us</a>
-	    <a href="html/FAQ.html">FAQ</a>
-	    <a href="html/application.html">Apply Now</a>
-	    <a class="icon" onclick="topNav()">
-	      <div id="container">
-	        <div class="bar1"></div>
-	        <div class="bar2"></div>
-	        <div class="bar3"></div>
-	      </div>
-	    </a>
-	</div>
-  </nav>
-
-  <main style='height:1000px;'>
-
-  </main>
-
-  <footer>
-  	<div id='footerSections'>
-	  	<section>
-	  		CONTACT
-	  		<br/><br/>
-	  		<p>1 Mars Ave.<br/>Marsville, Mars<br/>Email:<br/>&nbsp;mars@mars.mars&nbsp;<br/>Hologram Communicator:<br/>&nbsp;a12-48t-0s0</p> 
-	  	</section>
-	  	<section>
-	  		RESOURCES
-	  		<br/><br/>
-	  		<p>Herc's Class<br/>w3schools.com<br/>stackoverflow.com&nbsp;&nbsp;</p>
-	  	</section>
-	  	<section>
-	  		NEWSLETTER
-	  		<br/><br/>
-	  		<p>Subscribe to Mars Monthly&trade;
-	  		</p>
-	  		<input type='email' id='footerEmail' placeholder="Enter Email" /><div id='newsletterSubmit' onclick="footerSubmit()">Submit</div>
-	  	</section>
-	</div>
-	<div id='copyright'>
-		<br/>
-		Copyright &#169; 3027 SpaceY
-		<br/>
-		All Rights reserved. <a href='html/terms.txt' target="_blank">Terms of Use</a> | <a href='html/privacy.txt' target="_blank">Privacy Policy</a>
-	</div>
-  </footer>
-
-</body>
+		<footer>
+		 <div id='footerSections'>
+		  <section>
+		   CONTACT
+		   <br/><br/>
+		   <p>1 Mars Ave.<br/>Marsville, Mars<br/>Email:<br/>&nbsp;mars@mars.mars&nbsp;<br/>Hologram Communicator:<br/>&nbsp;a12-48t-0s0</p>
+		 </section>
+		 <section>
+		   RESOURCES
+		   <br/><br/>
+		   <p>Herc's Class<br/>w3schools.com<br/>stackoverflow.com&nbsp;&nbsp;</p>
+		 </section>
+		 <section>
+		   NEWSLETTER
+		   <br/><br/>
+		   <p>Subscribe to Mars Monthly&trade;
+		   </p>
+		   <input type='email' id='footerEmail' placeholder="Enter Email" /><div id='newsletterSubmit' onclick="footerSubmit()">Submit</div>
+		 </section>
+		</div>
+		<div id='copyright'>
+		  <br/>
+		  Copyright &#169; 3027 SpaceY
+		  <br/>
+		  All Rights reserved. <a href='terms.txt' target="_blank">Terms of Use</a> | <a href='privacy.txt' target="_blank">Privacy Policy</a>
+		</div>
+		</footer>
+	</body>
 </html>
