@@ -34,7 +34,7 @@ img.logo {
   vertical-align:middle;
 }
 
-.topnav div a:hover {
+.topnav a:hover {
   background-color: gainsboro;
   color: black;
 }
