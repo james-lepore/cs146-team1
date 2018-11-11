@@ -1,74 +1,71 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<style>
-			body, html {
-   				height: 100%;
-   				background-color: black;
-			}
-			
-			p{
-				position: absolute;
-				top:45%;
-				left:48%;
-				text-align: center;
-				color:white;
-				font-size: 50px;
-			}
-
-			.parallax {
-			    height: 100%; 
-			    width: 100%;
-			    background-attachment: fixed;
-			    background-position: center;
-			    background-repeat: no-repeat;
-			    background-size: cover;
-			    display: flex;
-				justify-content: center;
-				align-items: center;
-			}
-
-			#earth{
-				background-image: url('http://www.nasa.gov/centers/goddard/images/content/638831main_globe_east_2048.jpg');
-				background-size:95%;
-			}
-
-			#earth2{
-				background-image: url('http://www.nasa.gov/centers/goddard/images/content/638831main_globe_east_2048.jpg');
-				background-size:95%;
-			}
-
-			#mars{
-				background-image: url('https://upload.wikimedia.org/wikipedia/commons/0/02/OSIRIS_Mars_true_color.jpg');
-				background-size:100%;
-			}
-			
-			.box{
-				position: absolute;
-				height:200px;
-				width:200px;
-				background-color: red;
-				color:white;
-				font-size: 20px;
-				display: flex;
-				justify-content: center;
-				align-items: center;
-			}
-
-			.between{
-				height:30%;
-				background-color:white;
-				text-align: center;
-				font-size: 30px;
-			}
-		</style>
+		<link rel="stylesheet" type="text/css" href="css/parallax.css">
+		<link rel="stylesheet" type="text/css" href="css/reset.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+  	<link rel="stylesheet" type="text/css" href="css/desktop.css" media="screen and (min-width:769px)">
+  	<link rel="stylesheet" type="text/css" href="css/tablet.css"  media="screen and (min-width:481px) and (max-width:768px)">
+  	<link rel="stylesheet" type="text/css" href="css/mobile.css"  media="screen and (max-width:480px)">
+		<link rel='icon' href='images/favicon.png'>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Come to Mars!</title>
+		<script type="text/javascript" src="js/mainjs.js"></script>
 	</head>
 	<body>
-		<div class='parallax' id='earth'></div>
-		<div class='parallax' id = 'mars'>
-			<div class='box'>Hey its mars</div>
+		<nav class="topnav" id="myTopnav">
+		<a href="index.html"><img src="images/SpaceY.png"/></a>
+			<div>
+				  <a href="html/info.html">Information</a>
+					<a href="html/househtml.html">Housing</a>
+					<a href="html/aboutUs.html">About Us</a>
+					<a href="html/FAQ.html">FAQ</a>
+					<a href='html/application.html'>Apply Now</a>
+					<a class="icon" onclick="topNav()">
+					<div id="container">
+							<div class="bar1"></div>
+							<div class="bar2"></div>
+							<div class="bar3"></div>
+					</div>
+					</a>
+			</div>
+		</nav>
+
+		<div class='parallax' img='earth'>
+		  <div class='box' color="blue">Earth is boring</div>
 		</div>
-		<div class='between'>This is in betwwen the parallax sctions</div>
-		<div class='parallax' id='earth2'></div>
+		<div class='parallax' img='mars'>
+			<div class='box' color='red'>Mars is cool</div>
+		</div>
+		<div class='between'>Will you come with us there?</div>
+		<div class='parallax' img='earth'></div>
+
+		<footer>
+		 <div id='footerSections'>
+		  <section>
+		   CONTACT
+		   <br/><br/>
+		   <p>1 Mars Ave.<br/>Marsville, Mars<br/>Email:<br/>&nbsp;mars@mars.mars&nbsp;<br/>Hologram Communicator:<br/>&nbsp;a12-48t-0s0</p>
+		 </section>
+		 <section>
+		   RESOURCES
+		   <br/><br/>
+		   <p>Herc's Class<br/>w3schools.com<br/>stackoverflow.com&nbsp;&nbsp;</p>
+		 </section>
+		 <section>
+		   NEWSLETTER
+		   <br/><br/>
+		   <p>Subscribe to Mars Monthly&trade;
+		   </p>
+		   <input type='email' id='footerEmail' placeholder="Enter Email" /><div id='newsletterSubmit' onclick="footerSubmit()">Submit</div>
+		 </section>
+		</div>
+		<div id='copyright'>
+		  <br/>
+		  Copyright &#169; 3027 SpaceY
+		  <br/>
+		  All Rights reserved. <a href='terms.txt' target="_blank">Terms of Use</a> | <a href='privacy.txt' target="_blank">Privacy Policy</a>
+		</div>
+		</footer>
 	</body>
 </html>
