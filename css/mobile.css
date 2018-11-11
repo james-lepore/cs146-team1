@@ -109,12 +109,12 @@ footer div section p{
 	height: 200px;
 }
 .price{
-	font-size: x-large;
+	font-size: large;
 	margin: .5em 0;
 	font-family: verdana;
 }
 .description{
-	font-size: large;
+	font-size: medium;
 	font-weight: normal;
 	font-family: verdana;
 }
