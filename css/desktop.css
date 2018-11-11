@@ -58,3 +58,26 @@ footer #footerSections{
 	font-size: small;
 	font-weight: normal;
 }
+
+/*Application*/
+legend{
+	font-size: 24px;
+
+}
+.labels{
+    display: inline-block;
+    float: left;
+    clear: left;
+    width: 250px;
+    text-align: right;
+	margin-top:.5em;
+	margin-bottom:.5em;
+}
+
+.inputs {
+  	display: inline-block;
+  	float: left;
+	margin-top:.5em;
+	margin-bottom:.5em;
+
+}

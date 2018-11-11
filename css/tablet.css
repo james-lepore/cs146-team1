@@ -92,3 +92,17 @@ footer #footerSections{
 .description{
   font-size: x-small;
 }
+
+/*Application*/
+.inputs, .labels {
+  display:block;
+  display:flex;
+  justify-content:center;
+  margin:auto;
+}
+.form{
+  font-size: .8em;
+}
+legend{
+  font-size: 20px;
+}

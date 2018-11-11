@@ -11,7 +11,7 @@ body{
 	margin-right: auto;
 	display:flex;
 	flex-direction:column;
-	width: 50%;
+	width: 55%;
 	font-family: Verdana;
 }
 #submit{
@@ -56,52 +56,4 @@ legend {
 .app {
 	height: 1%;
 	width: 4%;
-}
-@media only screen and (min-width: 769px){
-.labels{
-    	display: inline-block;
-    	float: left;
-    	clear: left;
-    	width: 250px;
-    	text-align: right;
-	margin-top:.5em;
-	margin-bottom:.5em;
-}
-.inputs {
-  	display: inline-block;
-  	float: left;
-	margin-top:.5em;
-	margin-bottom:.5em;
-
-}
-
-legend{
-	font-size: 24px;
-
-}
-}
-@media only screen and (max-width: 768px) and (min-width: 481px){
-	.inputs, .labels {
-		display:block;
-		display:flex;
-		justify-content:center;
-		margin:auto;
-	}
-	.form{
-		font-size: .8em;
-	}
-	legend{
-		font-size: 20px;
-	}
-}
-@media only screen and (max-width: 480px){
-	.input, .labels {
-		display:block;
-	}
-	legend{
-		font-size: 14px;
-	}
-	.form{
-		font-size:.6em;
-	{
 }
