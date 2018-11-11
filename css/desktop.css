@@ -21,6 +21,10 @@ footer #footerSections{
   padding-top: 12px;
 }
 
+[img=rocket]{
+    background-image: url('../images/rocket.jpg');
+    background-size:155%;
+  }
 
 /*Housing*/
 .homeheader{

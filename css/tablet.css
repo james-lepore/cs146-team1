@@ -59,6 +59,11 @@ footer #footerSections{
   padding-top: 12px;
 }
 
+[img=rocket]{
+    background-image: url('../images/rocket.jpg');
+    background-size:200%;
+  }
+
 /*Housing*/
 .homeheader{
 	background-color: red;
