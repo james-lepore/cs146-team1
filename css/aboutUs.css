@@ -1,8 +1,6 @@
 body{
-	font-family:Verdana;
-}
-body{
 	background-image:url("https://i.gifer.com/origin/df/dfc3382d4a85242727fd23906597dd64_w200.gif");
+	font-family:Verdana;
 }
 
 .subtitles{
@@ -10,22 +8,33 @@ body{
 	font-weight:bold;
 	text-align:center;
 	font-family:Verdana;
-	font-size:24px;
+	font-size:28px;
 	color: white;
 }
 
 .names{
 	font-size:20px;
-	text-align:center;
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom:1%;
 }
 
-#message{
-	margin-top:10px;
-	height:500%;
-}
 div img{
 	height: 100px;
 	width: 100px;
+}
+img{
+	float:left;
+	margin-top:5px;
+	border-radius:5px;
+	border:1px solid black;
+	margin-right: 10px;
+	clear:both;
+}
+.words {
+    margin-left: 0px;
+    overflow:auto;
+    display:block;
 }
 .about{
 	border-radius: 25px;
@@ -37,8 +46,11 @@ div img{
 	margin-right: auto;
 	display:flex;
 	flex-direction:column;
+	justify-content:center;
 	width: 50%;
 	font-family: Verdana;
+	font-size: 18px;
+	text-align:center;
 }
 .bio{   
 	border-radius: 25px;
@@ -52,6 +64,18 @@ div img{
 	flex-direction:column;
 	width: 50%;
 	font-family: Verdana;
-	display: flex;   
 	align-items: flex-start;
+}
+.contact{
+	border-radius: 5px;
+	border:1px solid black;
+	margin-top:10px;
+	margin-bottom:10px;
+	font-family:Verdana;
+  	margin: 0 0 4px;
+  	padding: 3px;
+  	font-size: 1.1em;
+  	min-width: 65%;
+  	max-width:90%;
+  	min-height:90%;
 }
