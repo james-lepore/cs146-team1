@@ -26,6 +26,11 @@
     background-size:100%;
   }
 
+  [img=rocket]{
+    background-image: url('images/rocket.png');
+    background-size:100%;
+  }
+
 [color=blue]{
   background-color: blue;
 }

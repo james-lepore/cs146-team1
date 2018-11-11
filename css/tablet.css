@@ -37,8 +37,7 @@
 
 
 .topnav.responsive {
-  position: absolute;
-	z-index:1;
+  position: relative;
 }
 
 .topnav.responsive .icon {
