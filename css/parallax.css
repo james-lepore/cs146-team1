@@ -27,7 +27,7 @@
   }
 
   [img=rocket]{
-    background-image: url('images/rocket.png');
+    background-image: url('https://cdn.arstechnica.net/wp-content/uploads/2018/05/38056454431_706e1e5a68_k-1-800x533.jpg');
     background-size:100%;
   }
 
@@ -52,8 +52,12 @@
   }
 
   .between{
-    height:30%;
-    background-color:white;
+    background-color: #ffb366;
+    height:20%;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 30px;
+    font-family: Verdana;
   }
