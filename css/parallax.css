@@ -61,3 +61,8 @@
     font-size: 30px;
     font-family: Verdana;
   }
+
+  .secret {
+    color: inherit;
+    text-decoration: none;
+  }
