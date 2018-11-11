@@ -23,6 +23,21 @@ footer #footerSections{
 
 
 /*Housing*/
+.homeheader{
+	background-color: red;
+	display: flex;
+	align-item: center;
+	justify-content: center;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.homeh1{
+	margin: 0px 0px 0px 0px;
+	color: white;
+}
+.homebody{
+	background-color: maroon;
+}
 .list{
 	display: flex;
 	flex-wrap: wrap;
@@ -51,12 +66,14 @@ footer #footerSections{
 	height: 200px;
 }
 .price{
-	font-size: medium;
+	font-size: large;
 	margin: .5em 0;
+	font-family: verdana;
 }
 .description{
-	font-size: small;
+	font-size: medium;
 	font-weight: normal;
+	font-family: verdana;
 }
 
 /*Application*/
