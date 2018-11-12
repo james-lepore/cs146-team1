@@ -97,6 +97,7 @@ body{
 	display: flex;
 	align-items: center;
 	flex-direction: column;
+	border-radius: 25px;
 }
 .pic{
 	height: auto;

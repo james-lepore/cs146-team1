@@ -60,6 +60,7 @@ body{
 	background-color: #EEE;
 	display: flex;
 	align-items: center;
+	border-radius: 25px;
 }
 .pic{
 	min-height: 200px;
