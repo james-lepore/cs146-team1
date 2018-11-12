@@ -1,10 +1,5 @@
-body {
-background-image:url("https://i.gifer.com/origin/df/dfc3382d4a85242727fd23906597dd64_w200.gif");
-}
 b {
-	font-size:1.5vw;
-	color:#af0808;
-	text-shadow: 0 0 3px black;
+	color:#6f0808;
 }
 
 .accordion {
@@ -21,6 +16,7 @@ b {
     outline: none;
     transition: 0.4s;
 	text-align: center;
+
 }
 
 .panel {
@@ -35,6 +31,7 @@ b {
 	height: 100%;
 	color: #303030;
 	border-radius:1px;
+	font-family: Verdana;
 }
 .panel p {
 		font-size:14px;
@@ -79,6 +76,10 @@ b {
 		flex-direction:column;
 		justify-content: flex-start;
 		height:100%;
+	}
+	.panel {
+		margin-left: 20px;
+		margin-right: 20px;
 	}
 	.panel img {
 		max-width:50vw;
