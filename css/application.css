@@ -58,3 +58,13 @@ legend {
 	height: 1%;
 	width: 4%;
 }
+.subtitles{
+	display:flex;
+	font-weight:bold;
+	text-align:center;
+	font-family:Verdana;
+	font-size:28px;
+	color: white;
+	justify-content:center;
+	margin-top: 18px;
+}
