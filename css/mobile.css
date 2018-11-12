@@ -87,6 +87,7 @@ footer div section p{
 body{
 	background-image: linear-gradient(rgb(0,0,170), black);
 }
+
 .list{
 	display: flex;
 	flex-wrap: wrap;
