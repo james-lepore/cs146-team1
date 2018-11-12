@@ -16,12 +16,12 @@
   }
 
   [img=earth]{
-    background-image: url('http://www.nasa.gov/centers/goddard/images/content/638831main_globe_east_2048.jpg');
+    background-image: url('../images/earth_globe.jpg');
     background-size:100%;
   }
 
   [img=mars]{
-    background-image: url('https://upload.wikimedia.org/wikipedia/commons/0/02/OSIRIS_Mars_true_color.jpg');
+    background-image: url('../images/mars_globe.jpg');
     background-size:105%;
   }
 
