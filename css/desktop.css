@@ -102,5 +102,8 @@ legend{
   	float: left;
 	margin-top:.5em;
 	margin-bottom:.5em;
+}
 
+.words{
+	font-size: calc(10px + 0.8vw)
 }
