@@ -69,24 +69,11 @@ footer div section p{
     background-image: url('../images/rocket.jpg');
     background-size:300%;
   }
-
-/*Housing*/
-.homeheader{
-	display: flex;
-	align-item: center;
-	padding-top: 20px;
-	padding-bottom: 20px;
-	flex-direction: column;
-	text-align: center;
-}
-.homeh1{
-	margin: 0px 0px 0px 0px;
-	color: white;
-	font-family: verdana;
-}
 body{
 	background-image: linear-gradient(rgb(0,0,170), black);
 }
+
+/*Housing*/
 
 .list{
 	display: flex;
