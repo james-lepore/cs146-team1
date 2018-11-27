@@ -13,9 +13,7 @@ function addPerson(){
 
 	var l = document.createElement("p");
 	var txt = document.createTextNode("Full Name: ");
-	//l.setAttributeNode(lClass);
 	var i = document.createElement("input");
-	//i.setAttributeNode(iClass);
 	l.appendChild(txt);
 
 	var p = document.getElementById("placeholder");
@@ -27,8 +25,6 @@ function addPerson(){
 	var att = document.createAttribute("type");
 	att.value="date";
 
-	//k.setAttributeNode(lClass2);
-	//b.setAttributeNode(iClass2);
 	b.setAttributeNode(att);
 	k.appendChild(txt2);
 	
@@ -41,6 +37,19 @@ function addPerson(){
 }
 
 function submitApp(){
-	alert("Application Successfully Submitted! Redirecting to the homepage.")
-	window.location='../index.html'
+	var elements = document.getElementsByClassName("inputs");
+	var values = [];
+	for (let i = 0; i < elements.length; i++){
+		if (elements[i]!=null){
+			values.push(elements[i].value);
+		}
+	}
+	console.log(values);
+	alert("Thank you " + values[0] + ' for submitting your application to go to mars. Please verify all your information on the next page.')
+	window.location='verify.html'
+	var p = createElement('p');
+	var name = createTextNode(values[0] + ' ' + values[1]);
+	p.appendChild(name)
+	var info = document.getElementById("info");
+	info.appendChild(p);
 }
