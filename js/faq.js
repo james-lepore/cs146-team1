@@ -29,10 +29,10 @@ window.addEventListener('load', function(){
         shc = document.getElementById('shc')
 
         if (usd.value != ''){
-            shc.value = (usd.value / 1000000)
+            shc.value = (usd.value / 8370537)
         }
         else if (shc.value != ''){
-            usd.value = (shc.value * 1000000)
+            usd.value = (shc.value * 8370537)
         }
     }); 
 
