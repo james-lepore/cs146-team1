@@ -84,3 +84,7 @@ div img{
 .error::placeholder{
 	color:red;
 }
+
+#error_message{
+	color: red;
+}
