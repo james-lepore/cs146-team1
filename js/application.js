@@ -1,4 +1,15 @@
 window.addEventListener('load',function(){
+	if (sessionStorage.getItem("restart")=="false"){
+		console.log("HERE!");
+		lst = sessionStorage.getItem("list");
+		values = lst.split(',');
+		inputs = document.getElementsByClassName("inputs");
+		for (let i = 0; i < inputs.length; i++){
+			console.log(values[i]);
+			inputs[i].value=values[i];
+	}
+	}
+
 	var plus = document.getElementById('plus');
 	if (plus!=null){
 		plus.addEventListener("click", function(){
@@ -44,11 +55,10 @@ window.addEventListener('load',function(){
 		sub.addEventListener('click', function(){
 			complete = true;
 			var elements = document.getElementsByClassName("inputs");
-			console.log(elements);
 			var values = [];
 			for (let i = 0; i < elements.length; i++){
 				if ((elements[i].value==null || elements[i].value==''||elements[i].value=='-')&&(i!=7&&i!=19)){
-					alert("Your application is incomplete. Please fill in all fields marked with an asterisk before continuing.");
+					alert("Your application is incomplete. Please be sure to fill in all fields marked with an asterisk before continuing.");
 					complete = false;
 					break;
 				}
