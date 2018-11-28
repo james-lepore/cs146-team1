@@ -74,15 +74,16 @@
       <div class = "about">
          <form>
             <p>
-               <input class = "contact" type="text" placeholder = "Your Name"/>
+               <input class = "contact" id='name_input' type="text" placeholder = "Your Name"/>
+            </p>
+            <p id = 'error_message'></p>
+            <p>
+               <input class = "contact" id = 'email_input' type="email" placeholder = "Email Address"/>
             </p>
             <p>
-               <input class = "contact" type="email" placeholder = "Email Address"/>
+               <textarea class = "contact" id='message_input' rows=7 placeholder = "Enter your message here."></textarea>
             </p>
-            <p>
-               <textarea class = "contact" rows=7 placeholder = "Enter your message here."></textarea>
-            </p>
-            <button type = 'button' onclick="submitEmail()">Send</button>
+            <button type = 'button' id="submitEmail">Send</button>
          </form>
       </div>
       <footer>

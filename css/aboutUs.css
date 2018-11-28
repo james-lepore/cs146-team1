@@ -80,3 +80,7 @@ div img{
   	max-width:90%;
   	min-height:90%;
 }
+
+.error::placeholder{
+	color:red;
+}
