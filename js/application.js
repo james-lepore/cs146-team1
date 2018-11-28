@@ -57,8 +57,8 @@ window.addEventListener('load',function(){
 				}
 			}
 			if (complete == true){
-				alert("Thank you " + values[0] + ' for submitting your application to go to mars. Please verify all your information on the next page.')
-				sessionStorage.setItem("list",values)
+				alert(values[0] + ", thank you for submitting your application to go to mars. Please verify all your information on the next page.");
+				sessionStorage.setItem("list",values);
 				window.location='verify.html';
 			}
 		});
