@@ -1,9 +1,6 @@
-.labels{
-text-align:center;
-}
 p{
-display:flex;
-text-align:center;
+margin-left:auto;
+margin-right:auto;
 }
 #info{
 text-align:center;
@@ -17,4 +14,8 @@ text-align:center;
 }
 #restart{
 	margin-right:auto;
+}
+.vLabels{
+	margin-top:.5em;
+	margin-bottom:.5em;
 }

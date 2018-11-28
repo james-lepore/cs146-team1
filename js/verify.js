@@ -17,16 +17,16 @@ window.addEventListener('load',function(){
 	}
 	var fix = document.getElementById('fix');
 	if (fix!=null){
-		sessionStorage.setItem("restart","false");
 		fix.addEventListener('click', function(){
+			sessionStorage.setItem("restart","false");
 			alert("Found something wrong with your application? Or maybe you're experiencing some last minute nerves. No problem! Returning you to the application page...");
 			window.location='application.html';
 		});
 	}
 	var restart = document.getElementById('restart');
 	if (restart!=null){
-		sessionStorage.setItem("restart","false");
 		restart.addEventListener('click', function(){
+			sessionStorage.setItem("restart","true");
 			alert("Don't give up! We can't wait to see your application when it's finished! Redirecting to a brand new application page...");
 			window.location='application.html';
 		});
