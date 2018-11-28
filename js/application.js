@@ -42,22 +42,25 @@ window.addEventListener('load',function(){
 	var submit = document.getElementById('sub');
 	if (submit!=null){
 		sub.addEventListener('click', function(){
+			complete = true;
 			var elements = document.getElementsByClassName("inputs");
+			console.log(elements);
 			var values = [];
 			for (let i = 0; i < elements.length; i++){
+				if ((elements[i].value==null || elements[i].value==''||elements[i].value=='-')&&(i!=7&&i!=19)){
+					alert("Your application is incomplete. Please fill in all fields marked with an asterisk before continuing.");
+					complete = false;
+					break;
+				}
 				if (elements[i]!=null){
-					values.push(elements[i].value);
+					values.push([elements[i].value]);
 				}
 			}
-			console.log(values);
-			alert("Thank you " + values[0] + ' for submitting your application to go to mars. Please verify all your information on the next page.')
-			window.location='verify.html';
-			var p = createElement('p');
-			var name = createTextNode(values[0] + ' ' + values[1]);
-			console.log(name);
-			p.appendChild(name)
-			var info = document.getElementById("info");
-			info.appendChild(p);
+			if (complete == true){
+				alert("Thank you " + values[0] + ' for submitting your application to go to mars. Please verify all your information on the next page.')
+				sessionStorage.setItem("list",values)
+				window.location='verify.html';
+			}
 		});
 	}
 });
