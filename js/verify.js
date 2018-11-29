@@ -2,7 +2,9 @@ window.addEventListener('load',function(){
 	lst = sessionStorage.getItem("list");
 	values = lst.split(',');
 	document.getElementById("vName").innerHTML+=values[0]+' '+values[1];
-	labels = document.getElementsByClassName("labels");
+	labels = document.getElementsByClassName("vLabels");
+	console.log(values);
+	console.log(labels);
 	for (let i = 1; i < labels.length; i++){
 		if (labels[i]!=null){
 			labels[i].innerHTML+=values[i+1];
@@ -11,6 +13,7 @@ window.addEventListener('load',function(){
 	var verify = document.getElementById('finished');
 	if (verify!=null){
 		verify.addEventListener('click', function(){
+			sessionStorage.setItem("restart","true");
 			alert("Your application has been submitted successfuly. Returning to the home page...");
 			window.location='../index.html';
 		});
