@@ -6,9 +6,7 @@ window.addEventListener('load',function(){
 	console.log(values);
 	console.log(labels);
 	for (let i = 1; i < labels.length; i++){
-		if (labels[i]!=null){
-			labels[i].innerHTML+=values[i+1];
-		}
+		labels[i].innerHTML+=values[i+1];
 	}
 	var verify = document.getElementById('finished');
 	if (verify!=null){
