@@ -114,7 +114,7 @@ body{
 }
 
 /*Application*/
-.inputs, .labels {
+.inputs, .labels, .label{
   display:block;
 display:flex;
   justify-content:center;

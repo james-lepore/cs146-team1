@@ -77,7 +77,7 @@ legend{
 	font-size: 24px;
 
 }
-.labels{
+.labels, .label{
     display: inline-block;
     float: left;
     clear: left;

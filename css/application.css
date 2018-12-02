@@ -14,6 +14,10 @@ body{
 	width: 55%;
 	font-family: Verdana;
 }
+.labels:after{
+	content:"* ";
+	color:#e32;
+}
 #submit{
 	text-align:center;
 }
