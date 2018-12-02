@@ -26,22 +26,29 @@ window.addEventListener('load',function(){
 			iClass2.value="index";
 
 			var l = document.createElement("p");
+			var label2 = document.createElement("label");
+			label2.classList.add("labels");
 			var txt = document.createTextNode("Full Name: ");
 			var i = document.createElement("input");
-			l.appendChild(txt);
+			i.classList.add("inputs");
+			label2.appendChild(txt);
+			l.appendChild(label2);
 
 			var p = document.getElementById("placeholder");
 			var d = document.getElementById("placeholderdiv");
 
 			var k = document.createElement("p");
+			var label3 = document.createElement("label");
+			label3.classList.add("labels");
 			var txt2 = document.createTextNode("Birthday: ");
 			var b = document.createElement("input");
+			b.classList.add("inputs");
+			label3.appendChild(txt2);
 			var att = document.createAttribute("type");
 			att.value="date";
 
 			b.setAttributeNode(att);
-			k.appendChild(txt2);
-			
+			k.appendChild(label3);
 			d.insertBefore(b,p);
 			d.insertBefore(k,b);
 
@@ -55,6 +62,9 @@ window.addEventListener('load',function(){
 		sub.addEventListener('click', function(){
 			complete = true;
 			var elements = document.getElementsByClassName("inputs");
+			for(let i = 0; i<elements.length; i++){
+				console.log(elements[i].value);
+			}
 			var values = [];
 			for (let i = 0; i < elements.length; i++){
 				if ((elements[i].value==null || elements[i].value==''||elements[i].value=='-')&&(i!=7&&i!=19)){

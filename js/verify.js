@@ -3,12 +3,53 @@ window.addEventListener('load',function(){
 	values = lst.split(',');
 	document.getElementById("vName").innerHTML+=values[0]+' '+values[1];
 	labels = document.getElementsByClassName("vLabels");
-	for (let i = 1; i < labels.length; i++){
-		if (labels[i]!=null){
-			if(values[i+1] != ''){
-				labels[i].innerHTML+=values[i+1];
-			} else{
-				labels[i].innerHTML = '';
+	console.log(labels);
+	if (values.length==27){
+		for (let i = 1; i < labels.length; i++){
+			if (labels[i]!=null){
+				if(values[i+1] != ''){
+					labels[i].innerHTML+=values[i+1];
+				} else{
+					labels[i].innerHTML = '';
+				}
+			}
+		}
+	}
+	else{
+		var legend = document.createElement("legend");
+		let txt = document.createTextNode("Passengers");
+		legend.appendChild(txt);
+		var div = document.getElementById('info');
+		var addAfter = document.getElementById("addAfter");
+		div.insertBefore(legend,addAfter);
+		console.log(labels.length);
+		console.log(labels);
+		for (let i = 0; i < values.length-27;i+=2){
+			console.log("hello");
+			var p1 = document.createElement("p");
+			var name = document.createElement("label");
+			var txtName = document.createTextNode("Full Name: ");
+			name.classList.add("vLabels");
+			name.appendChild(txtName);
+			p1.appendChild(name);
+
+			var p2 = document.createElement("p");
+			var birthday = document.createElement("label");
+			var txtName2 = document.createTextNode("Birthday: ");
+			birthday.classList.add("vLabels");
+			birthday.appendChild(txtName2);
+			p2.appendChild(birthday);
+
+			div.insertBefore(p1,addAfter);
+			div.insertBefore(p2,addAfter);
+		}
+		for (let i = 1; i < labels.length; i++){
+			if (labels[i]!=null){
+				if(values[i+1] != ''){
+					labels[i].innerHTML+=values[i+1];
+				} else{
+					labels[i].innerHTML = '';
+				}
 			}
 		}
 	}
