@@ -10,7 +10,6 @@ window.addEventListener('load',function(){
 			} else{
 				labels[i].innerHTML = '';
 			}
-			
 		}
 	}
 	var verify = document.getElementById('finished');
